@@ -23,4 +23,4 @@ Route::post('/alumno/guardar', [AlumnoController::class, 'guardar']);
 Route::get('/alumno/eliminar/{id}', [AlumnoController::class, 'eliminar']);
 
 Route::get('/alumno/editar/{id}', [AlumnoController::class, 'editar']);
-Route::post('/alumno/actualizar', [AlumnoController::class, 'actualizar']);
+Route::post('/alumno/actualizar/{id}', [AlumnoController::class, 'actualizar']);

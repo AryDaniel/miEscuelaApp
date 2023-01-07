@@ -39,7 +39,17 @@ class AlumnoController extends Controller
         return view('alumno.editar', compact('alumno'));
     }
 
-    function actualizar(){
-        return 'in progress';
+    function actualizar(Request $datos, $id){
+        $alumno = Alumno::find($id);
+        $alumno->n_control = $datos->input('n_control');
+        $alumno->nombre = $datos->input('nombre');
+        $alumno->edad = $datos->input('edad');
+        $alumno->sexo = $datos->input('sexo');
+        $alumno->fecha_nacimiento = $datos->input('fecha_nacimiento');
+        $alumno->domicilio = $datos->input('domicilio');
+        $alumno->telefono = $datos->input('telefono');
+        $alumno->save();
+
+        return redirect('/alumnos');
     }
 }
