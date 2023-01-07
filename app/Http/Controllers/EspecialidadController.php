@@ -30,4 +30,14 @@ class EspecialidadController extends Controller
 
         return redirect('/especialidades');
     }
+    
+    function editar($id){
+        $especialidad = Especialidad::find($id);
+
+        return view('especialidad.editar', compact('especialidad'));
+    }
+
+    function actualizar(){
+        return 'in progress';
+    }
 }

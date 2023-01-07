@@ -30,3 +30,6 @@ Route::get('/especialidad/registrar', [EspecialidadController::class, 'registrar
 Route::post('/especialidad/guardar', [EspecialidadController::class, 'guardar']);
 
 Route::get('/especialidad/eliminar/{id}', [EspecialidadController::class, 'eliminar']);
+
+Route::get('/especialidad/editar/{id}', [EspecialidadController::class, 'editar']);
+Route::post('/especialidad/actualizar', [EspecialidadController::class, 'actualizar']);
