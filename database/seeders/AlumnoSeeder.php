@@ -6,6 +6,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Alumno;
+//Recuerda poner esto para que funcione (use \\Alumno;)
 
 class AlumnoSeeder extends Seeder
 {

@@ -9,8 +9,8 @@ class AlumnoController extends Controller
 {
     public function consultar()
     {
-        $alumnos = Alumno::get();
+        $alumnos = Alumno::paginate(3);
 
-        return view('alumno.alumnos', ['alumnos' => $alumnos]);
+        return view('alumno.alumnos', compact('alumnos'));
     }
 }

@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Route;
 
         m       migration
         s       seeder
+
+    php artisan migrate:refresh --seed
 */
 
 Route::get('/', [HomeController::class, 'home']);

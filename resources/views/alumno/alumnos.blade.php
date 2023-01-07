@@ -33,4 +33,8 @@
             @endforeach
         </tbody>
     </table>
+    <div class="text-center">
+        {{$alumnos->links()}}
+    </div>
+
 @stop
