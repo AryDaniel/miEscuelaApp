@@ -2,6 +2,7 @@
 
 @section('contenido')
     <h1>Listado de alumnos</h1><hr>
+    <a href="{{ url('/alumno/registrar') }}" class="btn btn-secondary">Registrar Alumno</a><br><br>
     <table class="table table-hover">
         <thead>
             <th>ID</th>

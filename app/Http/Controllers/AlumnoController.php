@@ -19,7 +19,9 @@ class AlumnoController extends Controller
         return view('alumno.registrar');
     }
 
-    function guardar(){
-        return 'in process';
+    public function guardar(Request $datos){
+        $alumno = Alumno::create($datos->post());
+
+        return redirect('/alumnos');
     }
 }

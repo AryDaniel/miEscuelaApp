@@ -11,4 +11,17 @@ class Alumno extends Model
 
     protected $table = 'alumnos';
 
+    // ASIGNACIÓN MASIVA
+    /* Con esto estamos especificando que solos los
+    campos que aparezcan aqui seran los que iran 
+    a la base de datos */
+    protected $fillable = [
+        'n_control',
+        'nombre',
+        'edad',
+        'sexo',
+        'fecha_nacimiento',
+        'domicilio',
+        'telefono'
+    ];
 }
