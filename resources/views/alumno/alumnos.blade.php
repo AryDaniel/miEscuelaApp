@@ -14,6 +14,23 @@
             <th>Teléfono</th>
             <th>Opciones alumnos</th>
         </thead>
+        <tbody>
+            @foreach ($alumnos as $a)
+                <tr>
+                    <td>{{ $a->id }}</td>
+                    <td>{{ $a->n_control }}</td>
+                    <td>{{ $a->nombre }}</td>
+                    <td>{{ $a->edad }}</td>
+                    <td>{{ $a->sexo }}</td>
+                    <td>{{ $a->fecha_nacimiento }}</td>
+                    <td>{{ $a->domicilio }}</td>
+                    <td>{{ $a->telefono }}</td>
+                    <td>
+                        <a href="" class="btn btn-primary btn-sm">Editar</a>
+                        <a href="" class="btn btn-danger btn-sm">Eliminar</a>
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
     </table>
-
 @stop
