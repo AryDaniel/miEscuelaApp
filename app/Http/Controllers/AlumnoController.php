@@ -32,4 +32,14 @@ class AlumnoController extends Controller
 
         return redirect('alumnos');
     }
+    
+    function editar($id){
+        $alumno = Alumno::find($id);
+
+        return view('alumno.editar', compact('alumno'));
+    }
+
+    function actualizar(){
+        return 'in progress';
+    }
 }
