@@ -23,5 +23,14 @@
             @endforeach
         </tbody>
     </table>
+    <div class="text-center">
+        {{$especialidades->links()}}
+    </div>
 
 @stop
+
+<style>
+    div nav ul {
+        justify-content: center;
+    }
+</style>

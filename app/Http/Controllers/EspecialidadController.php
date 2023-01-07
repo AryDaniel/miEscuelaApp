@@ -9,8 +9,8 @@ class EspecialidadController extends Controller
 {
     public function consultar()
     {
-        $especialidades = Especialidad::get();
+        $especialidades = Especialidad::paginate(5);
 
-        return view('especialidad.especialidades', ['especialidades' => $especialidades]);
+        return view('especialidad.especialidades', compact('especialidades'));
     }
 }

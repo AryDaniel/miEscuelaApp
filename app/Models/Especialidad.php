@@ -12,7 +12,7 @@ class Especialidad extends Model
 
     use SoftDeletes;
 
-    protected $table = 'especialidades';
+    protected $table = 'especialidades'; // Esto se tendra que añadir
 
     protected $fillable = [
         'nombre',
