@@ -2,16 +2,14 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AlumnoController;
+use App\Http\Controllers\EspecialidadController;
 use Illuminate\Support\Facades\Route;
 
 /*
     Ejecutamos:
-        php artisan make:model -ms
-
-        m       migration
-        s       seeder
-
-    php artisan migrate:refresh --seed
+        php artisan make:controller EspecialidadController
+        php artisan make:model      Especicialidad -ms
+        php artisan migrate --seed
 */
 
 Route::get('/', [HomeController::class, 'home']);
@@ -24,3 +22,6 @@ Route::get('/alumno/eliminar/{id}', [AlumnoController::class, 'eliminar']);
 
 Route::get('/alumno/editar/{id}', [AlumnoController::class, 'editar']);
 Route::post('/alumno/actualizar/{id}', [AlumnoController::class, 'actualizar']);
+
+// Especialidades
+Route::get('/especialidades', [EspecialidadController::class, 'consultar']);
