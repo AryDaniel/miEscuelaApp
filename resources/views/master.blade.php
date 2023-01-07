@@ -24,10 +24,10 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                Dropdown
+                Alumnos
                 </a>
                 <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="{{url('/alumnos')}}">Consultar</a>
                 <a class="dropdown-item" href="#">Another action</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">Something else here</a>
