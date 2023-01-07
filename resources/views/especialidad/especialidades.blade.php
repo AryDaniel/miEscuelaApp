@@ -17,7 +17,7 @@
                     <td>{{ $e->nombre }}</td>
                     <td>
                         <a href="" class="btn btn-primary btn-sm">Editar</a>
-                        <a href="" class="btn btn-danger btn-sm">Eliminar</a>
+                        <a href="{{url('/especialidad/eliminar')}}/{{$e->id}}" class="btn btn-danger btn-sm">Eliminar</a>
                     </td>
                 </tr>
             @endforeach
