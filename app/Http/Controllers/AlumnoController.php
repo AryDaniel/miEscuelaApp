@@ -13,4 +13,13 @@ class AlumnoController extends Controller
 
         return view('alumno.alumnos', compact('alumnos'));
     }
+
+    public function registrar()
+    {
+        return view('alumno.registrar');
+    }
+
+    function guardar(){
+        return 'in process';
+    }
 }
