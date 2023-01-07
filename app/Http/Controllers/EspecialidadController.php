@@ -18,8 +18,9 @@ class EspecialidadController extends Controller
         return view('especialidad.registrar');
     }
 
-    function guardar(){
+    function guardar(Request $datos){
+        $especialidad = Especialidad::create($datos->post());
 
-        return 'in process';
+        return redirect('/especialidades');
     }
 }
