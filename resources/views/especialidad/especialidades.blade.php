@@ -3,7 +3,7 @@
 @section('contenido')
 <br>
     <h1>Consultar especialidades</h1><hr>
-    <a href="" class="btn btn-secondary">Registrar especialidad</a><br><br>
+    <a href="{{url('/especialidad/registrar')}}" class="btn btn-secondary">Registrar especialidad</a><br><br>
     <table class="table table-hover">
         <thead>
             <th>ID</th>

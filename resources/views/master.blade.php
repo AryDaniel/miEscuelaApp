@@ -36,7 +36,7 @@
                 </a>
                 <div class="dropdown-menu">
                 <a class="dropdown-item" href="{{url('/especialidades')}}">Consultar</a>
-                <a class="dropdown-item" href="">Registrar</a>
+                <a class="dropdown-item" href="{{url('/especialidad/registrar')}}">Registrar</a>
             </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">

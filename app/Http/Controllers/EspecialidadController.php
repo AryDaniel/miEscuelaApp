@@ -13,4 +13,13 @@ class EspecialidadController extends Controller
 
         return view('especialidad.especialidades', compact('especialidades'));
     }
+
+    function registrar(){
+        return view('especialidad.registrar');
+    }
+
+    function guardar(){
+
+        return 'in process';
+    }
 }
