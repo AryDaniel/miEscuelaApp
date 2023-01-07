@@ -37,7 +37,12 @@ class EspecialidadController extends Controller
         return view('especialidad.editar', compact('especialidad'));
     }
 
-    function actualizar(){
-        return 'in progress';
+
+    function actualizar(Request $datos, $id){
+        $especialidad = Especialidad::find($id);
+        $especialidad->nombre = $datos->input('nombre');
+        $especialidad->save();
+
+        return redirect('/especialidades');
     }
 }

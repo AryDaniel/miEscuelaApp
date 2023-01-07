@@ -2,7 +2,8 @@
 
 @section('contenido')
     <h1>Editar Especialidad</h1><hr>
-    <form action="{{url('/especialidad/actualizar')}}" method="POST">
+                                            {{-- Como 3re parametro enviamos el id --}}
+    <form action="{{url('/especialidad/actualizar')}}/{{$especialidad->id}}" method="POST">
         @csrf
         <div class="form-group">
             <label for="">Nombre:</label>
