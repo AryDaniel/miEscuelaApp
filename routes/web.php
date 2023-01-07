@@ -7,8 +7,7 @@ use Illuminate\Support\Facades\Route;
 
 /*
     Ejecutamos:
-        php artisan make:controller EspecialidadController
-        php artisan make:model      Especicialidad -ms
+        php artisan make:model -ms
         php artisan migrate --seed
 */
 
